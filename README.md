@@ -57,9 +57,9 @@ This are required to compile the native image and use the Groovy capabilities, o
 groovy dgm-reflections-generator.groovy
 ```
 
-### git-config reflections of generated class resources
+### custom reflections of generated class resources
 
-If for any reason you have problems with the `git-config` reflections, you can compile and create the reflections
+If for any reason you have problems with the custom reflections, you can compile and create the reflections
  with the generated sources.
 
 ```groovy
