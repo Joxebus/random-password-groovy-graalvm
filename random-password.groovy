@@ -1,4 +1,4 @@
-// java -cp ".:$GROOVY_HOME/lib/groovy-3.0.6.jar:$GROOVY_HOME/lib/groovy-cli-commons-3.0.6.jar:$GROOVY_HOME/lib/commons-cli-1.4.jar:out/dev" random-password --help
+// java -cp ".:$GROOVY_HOME/lib/groovy-3.0.6.jar:out/dev" random-password --help
 
 String[] args = getProperty("args") as String[]
 
