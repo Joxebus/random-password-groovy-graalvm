@@ -68,7 +68,7 @@ groovy custom-reflections-generator.groovy
 
 After finish do not forget to include the files generated to your configuration `-H:ReflectionConfigurationFiles`.
 
-Thanks to @wololock is published on his gist here:  https://gist.github.com/wololock/ac83a8196a8252fbbaacf4ac84e10b36
+Thanks to @wololock who published the gist for **dmg reflections** here:  https://gist.github.com/wololock/ac83a8196a8252fbbaacf4ac84e10b36
 
 
 ## Build native-image
@@ -104,7 +104,39 @@ random-password
 [random-password:45936]        image:   4,975.52 ms,  5.75 GB
 [random-password:45936]        write:   1,247.91 ms,  5.75 GB
 [random-password:45936]      [total]:  64,380.63 ms,  5.75 GB
+```
 
+## About Classpath jars included
+
+For this example we are currently using `$GROOVY_HOME/lib/groovy-3.0.6.jar` and de `out/dev` content
+but if your script include additional jars you need to provide them here, additional jars that groovy 
+provide are the following in this case this is for `Groovy 3.0.6`
+
+```shell
+❯ ls $GROOVY_HOME/lib
+
+ST4-4.1.jar                         groovy-jaxb-3.0.6.jar               jansi-1.18.jar
+ant-1.10.8.jar                      groovy-jmx-3.0.6.jar                javaparser-core-3.16.1.jar
+ant-antlr-1.10.8.jar                groovy-json-3.0.6.jar               javax.servlet-api-3.0.1.jar
+ant-junit-1.10.8.jar                groovy-jsr223-3.0.6.jar             jcommander-1.78.jar
+ant-launcher-1.10.8.jar             groovy-macro-3.0.6.jar              jline-2.14.6.jar
+bsf-2.4.0.jar                       groovy-nio-3.0.6.jar                jsp-api-2.0.jar
+commons-cli-1.4.jar                 groovy-servlet-3.0.6.jar            jsr166y-1.7.0.jar
+commons-logging-1.2.jar             groovy-sql-3.0.6.jar                junit-4.13.jar
+extras-jaxb                         groovy-swing-3.0.6.jar              junit-jupiter-api-5.7.0.jar
+gpars-1.2.1.jar                     groovy-templates-3.0.6.jar          junit-jupiter-engine-5.7.0.jar
+groovy-3.0.6.jar                    groovy-test-3.0.6.jar               junit-platform-commons-1.7.0.jar
+groovy-ant-3.0.6.jar                groovy-test-junit5-3.0.6.jar        junit-platform-engine-1.7.0.jar
+groovy-astbuilder-3.0.6.jar         groovy-testng-3.0.6.jar             junit-platform-launcher-1.7.0.jar
+groovy-bsf-3.0.6.jar                groovy-xml-3.0.6.jar                multiverse-core-0.7.0.jar
+groovy-cli-commons-3.0.6.jar        groovy-yaml-3.0.6.jar               opentest4j-1.2.0.jar
+groovy-cli-picocli-3.0.6.jar        groovy.icns                         org.abego.treelayout.core-1.0.1.jar
+groovy-console-3.0.6.jar            hamcrest-core-1.3.jar               qdox-1.12.1.jar
+groovy-datetime-3.0.6.jar           ivy-2.5.0.jar                       snakeyaml-1.26.jar
+groovy-dateutil-3.0.6.jar           jackson-annotations-2.11.2.jar      testng-7.3.0.jar
+groovy-docgenerator-3.0.6.jar       jackson-core-2.11.2.jar             xstream-1.4.13.jar
+groovy-groovydoc-3.0.6.jar          jackson-databind-2.11.2.jar
+groovy-groovysh-3.0.6.jar           jackson-dataformat-yaml-2.11.2.jar
 ```
 
 ### Usage
